@@ -1,15 +1,14 @@
-> **Note:** To access all shared projects, get information about environment setup, and view other guides, please visit [Explore-In-HMOS-Wearable Index](https://github.com/Explore-In-HMOS-Wearable/hmos-index).
-
 # Book Store
 
-This project is a wearable watch application built for **HarmonyOS NEXT** wearable devices, developed using **ArkTS**, designed to help users manage and explore their personal books collection.
+This book-store-dev project is a wearable watch application built for **HarmonyOS NEXT** wearable devices, developed using **ArkTS**, designed to help users manage and explore their personal books collection.
 
 # Preview
 
 <div>
-<img src="./screenshots/splashoutput.png" width="25%"/>
-<img src="./screenshots/booksoutput.png" width="25%"/>
-<img src="./screenshots/detailoutput.png" width="25%"/>
+<img src="./screenshots/1.png" width="24%"/>
+<img src="./screenshots/2.png" width="24%"/>
+<img src="./screenshots/3.png" width="24%"/>
+<img src="./screenshots/4.png" width="24%"/>
 </div>
 
 # Use Cases
@@ -23,12 +22,27 @@ The following are the application's featured use cases:
 5. The user can see a book of the day
 6. The user can play with the Games button to catch the button
 
-# Tech Stack
+# Technology
 
+## Stack
 - **Languages**: ArkTS
 - **Frameworks**: HarmonyOS SDK 5.1.0(18)
 - **Tools**: DevEco Studio Vers 5.1.0.842
 - **Libraries**: @kit.ArkUI, @kit.RemoteCommunicationKit
+
+## Setup
+
+### API Key
+This project uses the [Google Books API](https://developers.google.com/books). The API key is not included in the repository.
+
+Open `entry/src/main/resources/base/element/string.json` and set the `api_key` value:
+
+```json
+{
+  "name": "api_key",
+  "value": "YOUR_GOOGLE_BOOKS_API_KEY_HERE"
+}
+```
 
 # Directory Structure
 
